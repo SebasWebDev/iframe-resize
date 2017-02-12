@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Iframe Resize - test</title>
+	    <style>
+	    html * {
+	    	-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+	    }
+	    html, body {
+	    	width: 100%;
+	    	height: 100%;
+	    	margin: 0;
+	    }
+	    .container {
+	    	width: 900px;
+	    	max-width: 100%;
+	    	padding: 30px 20px;
+	    	margin: 0 auto;
+	    }
+	    iframe {
+	    	width: 100%;
+	    	height: 200px;
+	    }
+	    </style>
+	</head>
+	<body>
+		<div class="container">
+			<iframe src="iframe.html" scrolling="no"></iframe>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+		<script src="iframe-resize.js"></script>
+		<script>
+		$('iframe').iframeResize();
+		</script>
+	</body>
+</html>
