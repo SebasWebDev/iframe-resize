@@ -1,4 +1,4 @@
-/*!
+/**
  * jQuery Iframe Resize 
  *
  * Version 0.0.1
@@ -25,6 +25,10 @@
 
     /**
      * Constructor.
+     *
+     * @param {HTMLElement} ele: the iframe element.
+     * @param {string} id: the unique id of the window array.
+     * @param {object} options: the setting.
      */    
     function IframeResize(ele, id, options) {
         this.id = id;
@@ -153,7 +157,7 @@
 
         iframe.animate({ 'height': newHeight + 'px' }, 400);
     };
-    /*
+    /**
      * Function to attach events to elements.
      *
      * @param {object} obj: the DOM element object to attach events to.
@@ -168,7 +172,9 @@
         }
     };
 
-    // Plugin declaration.
+    /**
+     * jQuery plugin declaration.
+     */
     $.fn[ _PLUGIN_ ] = function (options) {
         window.iframeResize =  window.iframeResize || {};
         this.each(function () {
