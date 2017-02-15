@@ -193,7 +193,7 @@
         return $(this);
     };
     
-    $.fn[ _PLUGIN_ ].version = _AUTHOR_;
+    $.fn[ _PLUGIN_ ].author = _AUTHOR_;
 
     $.fn[ _PLUGIN_ ].version = _VERSION_;
 
