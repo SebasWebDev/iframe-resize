@@ -11,7 +11,7 @@ Secure cross-origin iframe height resize for dynamic content. Uses message event
 <script src="iframe-resize.js"></script>
 ```
 
-* Attach the function to the selector. The selector could be an iframe, a parent elemnt of iframes, the document.
+* Attach the function to the selector. The selector could be an iframe, a parent element of iframes or the document.
 ```
 $('iframe').iframeResize();
 ```
